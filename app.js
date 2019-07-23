@@ -1,5 +1,5 @@
 $(document).ready(function() {
-
+	$("#search").on("click", search);
 });
 
 function search() {
@@ -18,12 +18,19 @@ function search() {
 		$.ajax({
 			url: queryURL,
 			method: "GET"
-		  }).then(function(response) {}
+		  }).then(function(response) {
+			console.log('response', response)
+			// Loop over the response.data
+
+				// Build each row from data
+
+				// append the row to id: articleList
+		  })
 		
 		
 		
-			// then Update UI with articles
-		  $("searchTerm")
+			
+		  
 
 function clearResults() {
 	// Empty articleList
