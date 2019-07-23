@@ -12,47 +12,72 @@
     
     <!-- JUMBOTRON -->
     <div class="jumbotron">
-      <h1 class="display-4">New York Times Search</h1>
+      <h1 class="display-4"><center>New York Times Search</center></h1>
     </div>
     <!-- FORM -->
     <div class="container">
-        <h2>Search Parameters</h2>
-            <form>
-                <!-- ID: searchTerm -->
-                <div class="search-term">
-                    <label for="searchTerm">Search Term:</label>
-                    <input type="text" class="form-control" id="searchTerm">
-                </div>
-                <!-- ID: numRecords -->
-                <div class="number">
-                    <label for="number">Number of Records to Retrieve:</label>
-                    <input type="password" class="form-control" id="number">
-                </div>
-                <!-- ID: startYear -->
-                <div class="start-year">
-                  <label for="start-year">Start Year (Optional):</label>
-                  <input type="password" class="form-control" id="startY">
-                </div>
-                <!-- ID: endYear -->
-                <div class="end-year">
-                  <label for="end-year">End Year (Optional):</label>
-                  <input type="password" class="form-control" id="endY">
-                </div>
+        <div class="paramContainer">
+            <div class="paramHead">
+              <h3 class="panel-title"> <span class="glyphicon glyphicon-folder-open" aria-hidden="true"></span> Search Parameters</h3>
+            </div>
+            <div class="parameterBody">
+                <form>
+                    <!-- ID: searchTerm -->
+                    <div class="search-term">
+                        <label for="searchTerm">Search Term:</label>
+                        <input type="text" class="form-control" id="searchTerm">
+                    </div>
+                  
+                    <br>
+                    <!-- ID: numRecords -->
+                    <div class="number">
+                        <label for="number">Number of Records to Retrieve:</label>
+                        <input type="password" class="form-control" id="number">
+                    </div>
 
-    
-        </form>
+                    <br>
+                    <!-- ID: startYear -->
+                    <div class="start-year">
+                      <label for="start-year">Start Year (Optional):</label>
+                      <input type="password" class="form-control" id="startY">
+                    </div>
+
+                    <br>
+                    <!-- ID: endYear -->
+                    <div class="end-year">
+                      <label for="end-year">End Year (Optional):</label>
+                      <input type="password" class="form-control" id="endY">
+                    </div>
         
-        <!-- search button callback: search -->
+                    <!-- search button callback: search -->
+                    <br>
+                    <button type="button" class="btn btn-default btn-sm">
+                      <span class="glyphicon glyphicon-search" aria-hidden="true"></span> Search
+                    </button>
 
+                    <!-- clear button callback: clearResults -->
+                     <button type="button" class="btn btn-default btn-sm">
+                        <span class="glyphicon glyphicon-trash" aria-hidden="true"></span> Clear Results
+                    </button>
 
-        <!-- clear button callback: clearResults -->
+                </form>
+            </div>
+        </div>
 
 
         <!-- PANEL -->
             <!-- PANEL BODY ID: articleList -->
-            
-
+    <div class="topArticleContainer">
+      <div class="topArticleHeading">
+          <h3 class="panel-title"> <span class="glyphicon glyphicon-list-alt aria-hidden="true"></span> Top Articles</h3>
+      </div>
+      
+      <div class="topArticle">
+        </div>
+      </div>
     </div>
+
+    
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
 		<script type="text/javascript" src="app.js"></script>
   </body>
