@@ -5,9 +5,8 @@
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
-    <script src="https://code.jquery.com/jquery.js"></script>
-
   </head>
+
   <body>
     
     
@@ -20,26 +19,32 @@
         <h2>Search Parameters</h2>
             <form>
                 <!-- ID: searchTerm -->
-                <div class="form-group">
-                    <label for="searchTerm">Search term:</label>
+                <div class="search-term">
+                    <label for="searchTerm">Search Term:</label>
                     <input type="text" class="form-control" id="searchTerm">
                 </div>
                 <!-- ID: numRecords -->
-                <div class="form-group">
-                    <label for="number">Number of records to retrieve:</label>
+                <div class="number">
+                    <label for="number">Number of Records to Retrieve:</label>
                     <input type="password" class="form-control" id="number">
                 </div>
-                <!-- ID: select -->
-                <!-- ID: startHere -->
-                <!-- ID: endHere -->
+                <!-- ID: startYear -->
+                <div class="start-year">
+                  <label for="start-year">Start Year (Optional):</label>
+                  <input type="password" class="form-control" id="startY">
+                </div>
+                <!-- ID: endYear -->
+                <div class="end-year">
+                  <label for="end-year">End Year (Optional):</label>
+                  <input type="password" class="form-control" id="endY">
+                </div>
 
-      
-    
-    
     
         </form>
         
         <!-- search button callback: search -->
+
+
         <!-- clear button callback: clearResults -->
 
 
@@ -48,7 +53,7 @@
             
 
     </div>
-    
-    <script type="text/javascript" src="app.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.2.1/jquery.min.js"></script>
+		<script type="text/javascript" src="app.js"></script>
   </body>
 </html>
