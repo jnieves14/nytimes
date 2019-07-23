@@ -1,38 +1,51 @@
 <!DOCTYPE html>
 <html lang="en">
   <head>
-    <title>Bootstrap Example</title>
+    <title>NY Times</title>
     <meta charset="utf-8">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
     <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
   </head>
   <body>
+    <!-- JUMBOTRON -->
     <div class="jumbotron">
-      <h1 class="display-4">Hello, world!</h1>
-      <p class="lead">This is a simple hero unit, a simple jumbotron-style component for calling extra attention to featured content or information.</p>
-      <hr class="my-4">
-      <p>It uses utility classes for typography and spacing to space content out within the larger container.</p>
-      <a class="btn btn-primary btn-lg" href="#" role="button">Learn more</a>
+      <h1 class="display-4">New York Times Search</h1>
     </div>
-
-
+    <!-- FORM -->
     <div class="container">
-      <h2>Form control: input</h2>
-      <p>The form below contains two input elements; one of type text and one of type password:</p>
-      <form>
+        <h2>Search Parameters</h2>
+            <form>
+                <!-- ID: searchTerm -->
+                <div class="form-group">
+                    <label for="searchTerm">Search term:</label>
+                    <input type="text" class="form-control" id="searchTerm">
+                </div>
+                <!-- ID: numRecords -->
+                <div class="form-group">
+                    <label for="number">Number of records to retrieve:</label>
+                    <input type="password" class="form-control" id="number">
+                </div>
+                <!-- ID: select -->
+                <!-- ID: startHere -->
+                <!-- ID: endHere -->
+
       
-        <div class="form-group">
-          <label for="usr">Name:</label>
-          <input type="text" class="form-control" id="usr">
-        </div>
-      
-        <div class="form-group">
-          <label for="pwd">Password:</label>
-          <input type="password" class="form-control" id="pwd">
-        </div>
-      </form>
+    
+    
+    
+        </form>
+        
+        <!-- search button callback: search -->
+        <!-- clear button callback: clearResults -->
+
+
+        <!-- PANEL -->
+            <!-- PANEL BODY ID: articleList -->
+            
+
     </div>
 
   </body>
